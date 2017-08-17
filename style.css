@@ -1,0 +1,83 @@
+.steel-blue { color: #36475A; }
+.steel-blue--bg { background: #36475A; }
+.vibrant-red--bg { background: #F02D45; }
+.vibrant-green--bg { background: #2DF060; }
+
+* {
+  font-family: "Roboto";
+}
+
+.spacer {
+  height: 10%;
+}
+
+.whitebox {
+  background: white;
+  border-radius: 15px;
+  margin: 30px auto;
+  box-shadow: 1px 2px 4 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.results {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 10px;
+  width: 43px;
+}
+
+.streamer {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.streamer-info {
+  width: 125px;
+}
+
+a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #999999;
+  padding-top: 5px;
+  margin: 0;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 1.5;
+}
+
+.red { background: red; }
+.green { background: green; }

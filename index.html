@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title> TwitchTV Streamers </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="steel-blue--bg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+  <div id="app">
+  <div class="spacer"> </div>
+
+  <div class="results whitebox">
+    <div v-for="streamer in streamers" class="streamer">
+      <div class="streamer-info">
+        <a :href="streamer.link">
+          <img :src="streamer.profile" class="profile-img">
+          {{ streamer.name }}
+        </a>
+        <p> {{ streamer.current }} </p>
+      </div>
+      <div class="status red" v-bind:class="{ green: streamer.online }"></div>
+    </div>
+  </div>
+
+  <h1> TWITCH STREAMERS </h1>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
